@@ -10,6 +10,7 @@ import com.example.model.HelloMessage;
 
 
 @Controller
+@CrossOrigin(origins="*",allowedHeaders="*")
 public class GreetingController {
     @MessageMapping("/hello")
     @SendTo("/topic/greetings")
